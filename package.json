@@ -1,0 +1,30 @@
+{
+  "name": "jest_check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watch"
+  },
+  "jest": {
+    "automock": false,
+    "scriptPreprocessor": "./jest.preprocessor.js",
+    "testRegex": ".*\\.spec\\.ts$",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts",
+      "node"
+    ],
+    "testPathDirs": [
+      "src"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-cli": "^12.1.0",
+    "typescript": "^1.9.0-dev.20160524-1.0"
+  }
+}
